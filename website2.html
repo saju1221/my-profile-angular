@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/solid.min.css"
+    integrity="sha512-uj2QCZdpo8PSbRGL/g5mXek6HM/APd7k/B5Hx/rkVFPNOxAQMXD+t+bG4Zv8OAdUpydZTU3UHmyjjiHv2Ww0PA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+
+  /* first page  */
+  .first-page {
+    position: relative;
+    height: 625px;
+  }
+
+  .king {
+    display: flex;
+    gap: 36px;
+    height: 60px;
+    width: 100%;
+    font-size: 18px;
+    position: fixed;
+    background-color: white;
+    z-index: 1;
+  }
+
+  .king img {
+    width: 50px;
+    height: 30px;
+    margin-left: 180px;
+  }
+
+  .king div:hover {
+    transform: translateY(-10px);
+  }
+
+
+  /*  
+  @keyframes don{
+    100%{
+      transform: scaleY(-1);
+    }
+    50%{
+      transform: scaleY(1);
+    }
+    0%{
+      transform: scaleY(-1);
+    }
+   */
+
+
+  .home {
+    color: black;
+    margin-left: 700px;
+    margin-top: 20px;
+    font-weight: bold;
+
+  }
+
+  .home a {
+    text-decoration: none;
+    color: black;
+
+  }
+
+  .about {
+    color: black;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .about a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .protfolio {
+    color: black;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .protfolio a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .news {
+    color: black;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+
+  .news a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .contacts {
+    color: black;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .contacts a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .animals {
+    display: flex;
+    gap: 5px;
+  }
+
+
+  .flex-name-1 {
+    margin-top: 200px;
+  }
+
+  .pet {
+    color: white;
+    font-style: normal;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 80px;
+    margin-left: 180px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .bird {
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 80px;
+    margin-left: 180px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .fly {
+    margin-left: 180px;
+    font-style: italic;
+    font-weight: lighter;
+  }
+
+  .atman {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    z-index: -1;
+  }
+
+  .atman img {
+    margin-right: -40px;
+    margin-top: -42px;
+  }
+
+  /* first page end  */
+  /* second page start  */
+
+  .second-page {
+    height: 1000px;
+    width: 1500px;
+    position: relative;
+  }
+
+  .boss {
+    display: flex;
+  }
+
+  .brand {
+    width: 395px;
+    height: 370px;
+    margin-top: 84px;
+    margin-left: 75px;
+    animation: bernard 5s linear infinite;
+  }
+
+  @keyframes bernard {
+    100% {
+      transform: translateY(-3px);
+    }
+
+    50% {
+      transform: translateY(3px);
+    }
+
+    0% {
+      transform: translateY(-3px);
+    }
+  }
+
+  .project {
+    margin-left: 172px;
+    margin-top: 156px;
+    font-size: 40px;
+  }
+
+  .head {
+    margin-left: 178px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .captian {
+    text-align: left;
+    width: 604px;
+    height: 65px;
+    margin-left: 177px;
+    margin-top: 114px;
+    font-style: italic;
+  }
+
+  .captian1 {
+    text-align: left;
+    width: 604px;
+    margin-left: 177px;
+    display: inline-block;
+    font-style: italic;
+  }
+
+  .btn {
+    height: 67px;
+    width: 180px;
+    font-style: italic;
+    position: absolute;
+    bottom: 416px;
+    right: 675px;
+    color: white;
+    background-color: black;
+  }
+
+  .btn:hover {
+    color: black;
+    background-color: white;
+  }
+
+  .garden {
+    font-family: "Poppins";
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    position: absolute;
+    top: 150px;
+    right: 350px;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .table {
+    display: flex;
+    gap: 30px;
+    margin-top: 280px;
+
+  }
+
+  .icon-i {
+    color: black;
+    width: 556px;
+    height: 100px;
+    text-align: justify;
+    margin-left: 150px;
+  }
+
+  .fa-lightbulb {
+    position: absolute;
+    bottom: 190px;
+    left: 95px;
+    font-size: 50px;
+  }
+
+  .design {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .icon {
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  .web {
+    width: 556px;
+    height: 100px;
+    text-align: justify;
+    margin-left: 80px;
+  }
+
+  .fa-tv {
+    position: absolute;
+    bottom: 200px;
+    left: 445px;
+    font-size: 43px;
+  }
+
+  .web1 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .web2 {
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  .process {
+    width: 556px;
+    height: 100px;
+    text-align: justify;
+    margin-left: 80px;
+  }
+
+  .fa-rocket {
+    position: absolute;
+    bottom: 195px;
+    right: 633px;
+    font-size: 50px;
+  }
+
+  .process1 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .process2 {
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  .photo {
+    width: 556px;
+    height: 100px;
+    text-align: justify;
+    margin-left: 80px;
+  }
+
+  .fa-camera-retro {
+    position: absolute;
+    bottom: 197px;
+    right: 264px;
+    font-size: 50px;
+  }
+
+  .photo1 {
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .photo2 {
+    font-style: italic;
+    margin-top: 30px;
+    font-size: 17px;
+  }
+
+  /* second page end  */
+  /* third page */
+  .mobile {
+    position: relative;
+    top: 0;
+    height: 900px;
+
+  }
+
+  .item {
+    position: absolute;
+    top: 94px;
+    left: 136px;
+  }
+
+  .water {
+    position: absolute;
+    top: 20px;
+    left: 123px;
+    font-family: "Poppins";
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    -webkit-text-stroke: 1px #000;
+  }
+
+  .fruits {
+    font-size: 50px;
+    /* display: inline-block;
+    overflow: hidden;
+    position: absolute;
+    top: 238px; */
+    /* left: 136px; */
+  }
+
+  .fruits:hover {
+    transform: scale(1.1);
+  }
+
+  .file {
+    font-size: 20px;
+    /* overflow: hidden;
+    position: absolute;
+    top: 412px;
+    left: 134px; */
+  }
+
+  .ten {
+    font-style: italic;
+  }
+
+  .fruits1 {
+    font-size: 50px;
+    /* position: absolute;
+    top: 234px;
+    left: 555px;
+    display: inline-block;
+    overflow: hidden; */
+  }
+
+  .fruits1:hover {
+    transform: scale(1.1);
+  }
+
+  .deli {
+    font-size: 20px;
+    /* position: absolute;
+    top: 412px;
+    left: 568px; */
+  }
+
+  .fruits2 {
+    font-size: 50px;
+    /* position: absolute;
+    top: 226px;
+    left: 968px;
+    display: inline-block;
+    overflow: hidden; */
+  }
+
+  .fruits2:hover {
+    transform: scale(1.1);
+  }
+
+  .lemon {
+    font-size: 20px;
+    /* position: absolute;
+    top: 412px;
+    left: 968px; */
+  }
+
+  .america {
+    display: flex;
+    gap: 150px;
+    margin-left: 100px;
+    padding-top: 250px;
+
+  }
+
+  .australia {
+    display: flex;
+    gap: 150px;
+    margin-left: 100px;
+    padding-top: 250px;
+
+  }
+
+
+  .fruits3 {
+    font-size: 50px;
+    /* position: absolute;
+    top: 530px;
+    left: 100px; */
+    /* display: inline-block;
+    overflow: hidden; */
+  }
+
+  .fruits3:hover {
+    transform: scale(1.1);
+  }
+
+  .phone {
+    /* position: absolute;
+    top: 711px;
+    left: 100px; */
+    font-size: 20px;
+  }
+
+  .room {
+    font-style: italic;
+  }
+
+  .fruits4 {
+    font-size: 50px;
+    /* position: absolute;
+    top: 530px;
+    left: 555px;
+    display: inline-block;
+    overflow: hidden; */
+  }
+
+  .fruits4:hover {
+    transform: scale(1.1);
+  }
+
+  .icecream {
+    /* position: absolute;
+    top: 711px;
+    left: 557px; */
+    font-size: 20px;
+  }
+
+  .five {
+    font-style: normal;
+  }
+
+  .house {
+    font-style: italic;
+  }
+
+  .fruits5 {
+    font-size: 50px;
+    /* position: absolute;
+    top: 530px;
+    left: 968px;
+    display: inline-block;
+    overflow: hidden; */
+  }
+
+  .fruits5:hover {
+    transform: scale(1.1);
+  }
+
+  .present {
+    font-size: 20px;
+    /* position: absolute;
+    top: 711px;
+    left: 969px; */
+  }
+
+  .sixcer {
+    font-style: normal;
+  }
+
+  .mouse {
+    font-style: italic;
+  }
+
+  /* third page end  */
+  /* fifth page start  */
+  .fourth-page {
+    position: relative;
+    top: 0;
+    height: 700px;
+  }
+
+  .bad {
+    font-size: 35px;
+    font-weight: bolder;
+    margin-left: 134px;
+    padding-top: 100px;
+  }
+
+  .containers {
+    display: flex;
+    margin-top: 160px;
+    margin-left: 133px;
+    gap: 60px;
+  }
+
+  .over {
+    font-family: "Poppins";
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    position: absolute;
+    top: 20px;
+    left: 120px;
+    padding-top: 100px;
+  }
+
+  .container1 img {
+    height: 225px;
+    width: 325px;
+    transition: transform .2s;
+  }
+
+  .container1 img:hover {
+    transform: scale(1.1);
+  }
+
+  .nature1 {
+    font-size: 16px;
+    background-color: bisque;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    letter-spacing: .2ch;
+    word-spacing: .5ch;
+    width: 326px;
+    margin-top: 30px;
+  }
+
+  .nature2 {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 226px;
+    text-align: center;
+    margin-left: 35px;
+  }
+
+  .container3 img {
+    height: 225px;
+    width: 325px;
+    transition: transform .2s;
+  }
+
+  .container3 img:hover {
+    transform: scale(1.1);
+  }
+
+  .garden3 {
+    font-size: 16px;
+    background-color: bisque;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    width: 326px;
+    letter-spacing: .2ch;
+    word-spacing: .5ch;
+    margin-top: 30px;
+  }
+
+  .garden4 {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 276px;
+    text-align: center;
+    margin-left: 33px;
+  }
+
+  .container5 img {
+    height: 225px;
+    width: 325px;
+    transition: transform .2s;
+  }
+
+  .container5 img:hover {
+    transform: scale(1.1);
+  }
+
+  .work1 {
+    font-size: 16px;
+    background-color: bisque;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+    width: 326px;
+    letter-spacing: .2ch;
+    word-spacing: .5ch;
+    margin-top: 30px;
+  }
+
+  .work2 {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 268px;
+    text-align: center;
+    margin-left: 35px;
+  }
+
+  /* fifth page end  */
+  /* sixth page start  */
+
+  .back {
+    font-family: "Poppins";
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    position: absolute;
+    top: -200px;
+    left: 150px;
+  }
+
+  .average {
+    position: relative;
+    margin: 0;
+    height: 700px;
+  }
+
+  .family {
+    position: absolute;
+    top: -190px;
+    left: 150px;
+    font-size: 38px;
+    font-weight: bold;
+
+  }
+
+  .class1 {
+    width: 575px;
+    margin-top: 300px;
+    margin-left: 155px;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 34px;
+    word-spacing: .5ch;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link1 {
+    padding-left: 5px;
+    width: 490px;
+    margin-top: 130px;
+    margin-left: 154px;
+    height: 37px;
+    font-style: italic;
+  }
+
+  .link2 {
+    padding-left: 5px;
+    width: 490px;
+    margin-top: 33px;
+    margin-left: 154px;
+    height: 37px;
+    font-style: italic;
+  }
+
+  .link3 {
+    padding-left: 5px;
+    width: 490px;
+    margin-top: 33px;
+    margin-left: 154px;
+    height: 110px;
+    font-style: italic;
+  }
+
+  .message1 {
+    height: 67px;
+    width: 180px;
+    margin-left: 154px;
+    margin-top: 60px;
+    border-radius: 0px;
+    background-color: black;
+    color: white;
+    font-style: italic;
+    letter-spacing: .1ch;
+  }
+
+  .message1:hover {
+    background-color: white;
+    color: black;
+  }
+
+  .orange {
+    display: flex;
+    gap: 10px;
+    background-color: #000;
+    color: white;
+    height: 230px;
+    margin-top: 146px;
+  }
+
+  .tiger {
+    margin-top: 100px;
+    margin-left: 145px;
+    width: 200px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .lion {
+    margin-top: 100px;
+    margin-left: 70px;
+    width: 200px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .elephant {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 200px;
+    font-size: 13px;
+    line-height: 30px;
+  }
+
+  .font {
+    margin-top: 110px;
+    margin-left: 30px;
+  }
+
+  .fa-facebook {
+    font-size: 22px;
+  }
+
+  .fa-twitter {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .fa-instagram {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .fa-cloud {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .fa-youtube {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .fa-vk {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+
+  .poem {
+    height: 70px;
+    width: 70px;
+    background-color: aqua;
+    position: fixed;
+    top: 140px;
+    left: 1270px;
+  }
+
+  .fa-gear {
+    position: fixed;
+    top: 150px;
+    /* background-color: white; */
+    left: 1280px;
+    font-size: 50px;
+    animation: fa-gear 2s linear infinite;
+    /* z-index: 1; */
+  }
+
+
+
+
+  @keyframes fa-gear {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+  /* sixth page end  */
+
+  @media only screen and (max-width:500px) {
+    .atman img {
+      width: 1500px;
+      height: 800px;
+      position: absolute;
+      right: -555px;
+    }
+
+    .king {
+      position: absolute;
+      right: 625px;
+      font-size: 10px;
+    }
+
+    .pet {
+      position: absolute;
+      top: 320px;
+      left: -160px;
+      font-size: 50px;
+
+    }
+
+    .bird {
+      position: absolute;
+      top: 380px;
+      font-size: 50px;
+      left: -160px;
+
+    }
+
+    .fly {
+      position: absolute;
+      top: 450px;
+      left: -160px;
+      font-size: 20px;
+    }
+
+    .king {
+      position: fixed;
+      font-size: 15px;
+      margin-right: 230px;
+      gap: 10px;
+      display: flex;
+
+    }
+
+    .brand {
+      position: absolute;
+      top: 54px;
+      width: 315px;
+      margin-left: 15px;
+    }
+
+    .project {
+      margin-left: 25px;
+      position: absolute;
+      top: 520px;
+      font-size: 30px;
+    }
+
+    .head {
+      position: absolute;
+      top: 715px;
+      font-size: 20px;
+      margin-left: 23px;
+    }
+
+    .captian {
+      position: absolute;
+      top: 720px;
+      margin-left: 20px;
+      width: 350px;
+    }
+
+    .captian1 {
+      position: absolute;
+      top: 920px;
+      margin-left: 20px;
+      width: 350px;
+    }
+
+    .btn {
+      position: absolute;
+      top: 1100px;
+      margin-right: 620px;
+
+    }
+
+    .icon-i {
+      position: absolute;
+      top: 1440px;
+      margin-left: -75px;
+    }
+
+    .design {
+      position: absolute;
+      top: -40px;
+      margin-left: 95px;
+    }
+
+    .icon {
+      position: absolute;
+      top: -30px;
+      margin-left: 85px;
+      width: 350px;
+    }
+
+    .item {
+      position: absolute;
+      top: 688px;
+      margin-left: -115px;
+      font-size: 35px;
+    }
+
+    .america {
+      display: flex;
+      flex-direction: column;
+      margin-left: 50px;
+      padding-top: 900px;
+    }
+
+    .australia {
+      display: flex;
+      flex-direction: column;
+      margin-left: 40px;
+      padding-top: 125px;
+    }
+
+    .bad {
+      font-size: 35px;
+      margin-left: 45px;
+    }
+
+    .containers {
+      display: flex;
+      flex-direction: column;
+      margin-left: 18px;
+    }
+
+    .family {
+      font-size: 35px;
+      margin-left: -100px;
+      padding-top: 890px;
+    }
+
+    .class1 {
+      margin-left: 20px;
+      padding-top: 835px;
+      width: 350px;
+    }
+
+    .box {
+      margin-left: -120px;
+    }
+
+    .message1 {
+      margin-left: 30px;
+    }
+
+    .orange {
+      padding-top: 250px;
+    }
+
+    .tiger {
+      position: absolute;
+      top: 1580px;
+      left: -110px;
+    }
+
+    .lion {
+      position: absolute;
+      top: 1660px;
+      left: -35px;
+    }
+
+    .elephant {
+      position: absolute;
+      top: 1750px;
+      left: -15px;
+      font-size: 15px;
+    }
+
+    .link1 {
+      width: 310px;
+    }
+
+    .link2 {
+      width: 310px;
+    }
+
+    .link3 {
+      width: 310px;
+    }
+
+    .font {
+      position: absolute;
+      top: 1850px;
+    }
+
+    .water {
+      display: none;
+    }
+
+    .web1 {
+      display: none;
+    }
+
+    .web2 {
+      display: none;
+    }
+
+    .process1 {
+      display: none;
+    }
+
+    .process2 {
+      display: none;
+    }
+
+    .photo1 {
+      display: none;
+    }
+
+    .photo2 {
+      display: none;
+    }
+
+    .photo {
+      display: none;
+    }
+
+    .process {
+      display: none;
+    }
+
+    .web {
+      display: none;
+    }
+
+    .poem {
+      margin-left: -970px;
+      height: 60px;
+      width: 60px;
+    }
+
+    .fa-gear {
+      margin-left: -970px;
+    }
+    .garden {
+      display: none;
+    }
+    .over {
+      display: none;
+    }
+    .back {
+      display: none;
+    }
+    .king.king img {
+   margin-left: 865px;
+   padding-top: 15px;
+   position: fixed;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <!-- first page -->
+  <!-- navbar -->
+  <div class="first-page">
+    <div class="king">
+      <img src="./dark1.png" alt="">
+      <div class="home"><a href="#zero-page">
+          Home
+        </a></div>
+      <div class="about"><a href="#first-page">
+          About
+        </a></div>
+      <div class="protfolio"><a href="#second-page">
+          Protfolio
+        </a></div>
+      <div class="news"><a href="#third-page">
+          News
+        </a></div>
+      <div class="contacts"><a href="#fourth-page">
+          Contacts
+        </a></div>
+    </div>
+    <div class="poem">
+      <i class="fa-solid fa-gear"></i>
+    </div>
+    <div class="animals" id="zero-page">
+      <div class="flex-name">
+        <div class="flex-name-1">
+          <h1 class="pet">BERNARD</h1>
+        </div>
+        <div>
+          <h1 class="bird">SYDNEY</h1>
+        </div>
+        <div>
+          <h3 class="fly">Creative Web & App Developer</h3>
+        </div>
+      </div>
+      <div class="atman"><img src="./atman.jpg" alt="" width="1000px" height="610px">
+      </div>
+    </div>
+  </div>
+  <!-- first page end -->
+  <!-- second page start -->
+  <div class="second-page" id="first-page">
+    <div class="boss">
+      <div class="brand"><img src="./bernard.jpg" alt="" class="brand"></div>
+      <div class="bench">
+        <p><span class="garden">ABOUT</span></p>
+        <h3 class="project">BERNARD SYDNEY</h3>
+        <h5 class="head">Creative Web & App Developer</h5>
+        <h3 class="captian">My name is Bernard Sydney. I am a Web Developer,
+          and I'm very passionate and dedicated to my work.</h3>
+        <h3 class="captian1">With 20 years experience as a professional Web developer,
+          I have acquired the skills and knowledge necessary to make
+          your project a success. I enjoy every step of the design process,
+          from discussion and collaboration</h3>
+        <button class="btn">Learn more</button>
+      </div>
+    </div>
+
+    <div class="table">
+      <div class="icon-i">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3 class="design">Creative Design</h3>
+        <h3 class="icon">Web design is a similor process tention of creation with the in intention of
+          the pre presenting</h3>
+      </div>
+      <div class="web">
+        <i class="fa-solid fa-tv"></i>
+        <h3 class="web1">Web Development</h3>
+        <h3 class="web2">Web design is a similor process tention of creation with the in intention of
+          the pre presenting</h3>
+      </div>
+      <div class="process">
+        <i class="fa-solid fa-rocket"></i>
+        <h3 class="process1">Brand Identity</h3>
+        <h3 class="process2">Web design is a similor process tention of creation with the in intention
+          of the pre presenting</h3>
+      </div>
+      <div class="photo">
+        <i class="fa-solid fa-camera-retro"></i>
+        <h3 class="photo1">Adobe Photoshop</h3>
+        <h3 class="photo2">Web design is a similor process tention of creation with the in
+          intention of the pre presenting</h3>
+      </div>
+    </div>
+  </div>
+  <!-- second page end  -->
+  <!-- third page start -->
+  <div class="mobile" id="second-page">
+    <div>
+      <h1 class="item">FEATURED WORKS</h1>
+      <div class="water">PROTFOLIO</div>
+    </div>
+    <div class="america">
+      <div>
+        <div class="fruits">
+          <img src="./jerry.jpg" alt="">
+        </div>
+        <div class="file">
+          <h4 class="one">sweet jerry</h4>
+          <h4 class="ten">vimeo</h4>
+        </div>
+      </div>
+      <div>
+        <div class="fruits1">
+          <img src="./delicious.jpg" alt="">
+        </div>
+        <div class="deli">
+          <h4 class="two">delicious</h4>
+          <h4 class="five">youtube</h4>
+        </div>
+      </div>
+      <div>
+        <div class="fruits2">
+          <img src="./blue lemon.jpg" alt="">
+        </div>
+        <div class="lemon">
+          <h4 class="three">bluelemon</h4>
+          <h4 class="six">soundcloud</h4>
+        </div>
+      </div>
+    </div>
+    <div class="australia">
+      <div>
+        <div class="fruits3">
+          <img src="./yellow phone.jpg" alt="">
+        </div>
+        <div class="phone">
+          <h4 class="four">yellowphone</h4>
+          <h4 class="room">image</h4>
+        </div>
+      </div>
+      <div>
+        <div class="fruits4">
+          <img src="./ice1.jpg" alt="">
+        </div>
+        <div class="icecream">
+          <h4 class="five">icecream</h4>
+          <h4 class="house">image</h4>
+        </div>
+      </div>
+      <div>
+        <div class="fruits5">
+          <img src="./present.jpg" alt="" width="280px" height="180px">
+        </div>
+        <div class="present">
+          <h4 class="sixcer">goodpresent</h4>
+          <h4 class="mouse">image</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- third page end -->
+    <!-- fourth page start -->
+    <!-- <div class="fifth-page">
+    <div class="flex-conainer">
+      <div class="flex-item-1">
+        <h1>WHAT CLIENTS SAY</h1>
+      </div>
+      <div class="flex-item-2"></div>
+    </div>
+  </div> -->
+
+    <!-- fourth page end -->
+    <!-- fifth page start -->
+    <div class="fourth-page" id="third-page">
+      <div class="bad">
+        <span>LATEST NEWS</span>
+      </div>
+      <p><span class="over">NEWS</span></p>
+      <div class="containers">
+        <div class="container1">
+          <img src="./nature.jpg" alt="">
+          <h4 class="nature1">By alex watson/10 may 2021</h4>
+          <h4 class="nature2">Developers watch out for these burnout symptoms</h4>
+        </div>
+        <div class="container3">
+          <img src="./map.jpg" alt="">
+          <h4 class="garden3">By Bona green/05 aprill 2021</h4>
+          <h4 class="garden4">how to be appreciated for your hard work as a developer</h4>
+        </div>
+        <div class="container5">
+          <img src="./pulb.png" alt="">
+          <h4 class="work1">By Ave smith/22 march 2021</h4>
+          <h4 class="work2">how designers and developers can collaborate better</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- fifth page end -->
+    <!-- sixth page start -->
+    <div class="average" id="fourth-page">
+      <div class="family">
+        <span>GET IN TOUCH</span>
+      </div>
+      <p><span class="back">CONTACT</span></p>
+      <div>
+        <h3 class="class1">Please fill out the form on this section to contact with me. Or call between 9:00 a.m.
+          and8:00 p.m. ET, Monday through Friday </h3>
+        <div class="box">
+          <input type="text" class="link1" name placeholder="Name">
+          <input type="text" class="link2" name placeholder="Email">
+          <input type="text" class="link3" name placeholder="Message">
+        </div>
+        <button class="message1">Send Message</button>
+        <div class="orange">
+          <div class="tiger">
+            <h3>WAXON <br> PORTFOLIO TEMPLATE</h3>
+          </div>
+          <div class="lion">
+            <h3>Brook 103, <br> 90021 New York, USA</h3>
+          </div>
+          <div class="elephant">
+            <h3>hi@waxon.com <br> +77 033 442 55 57</h3>
+          </div>
+          <div class="font">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-cloud"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-vk"></i>
+          </div>
+        </div>
+      </div>
+    </div>
